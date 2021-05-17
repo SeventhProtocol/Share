@@ -13,6 +13,9 @@
 		637C572526522992009E175A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 637C572426522992009E175A /* Preview Assets.xcassets */; };
 		637C573026522993009E175A /* ShareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637C572F26522993009E175A /* ShareTests.swift */; };
 		637C573B26522993009E175A /* ShareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637C573A26522993009E175A /* ShareUITests.swift */; };
+		637C574F26522C86009E175A /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637C574E26522C86009E175A /* ShareViewController.swift */; };
+		637C575226522C87009E175A /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 637C575026522C87009E175A /* MainInterface.storyboard */; };
+		637C575626522C87009E175A /* ShareUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 637C574C26522C86009E175A /* ShareUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +33,28 @@
 			remoteGlobalIDString = 637C571926522991009E175A;
 			remoteInfo = Share;
 		};
+		637C575426522C87009E175A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 637C571226522991009E175A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 637C574B26522C86009E175A;
+			remoteInfo = ShareUI;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		637C575A26522C87009E175A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				637C575626522C87009E175A /* ShareUI.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		637C571A26522991009E175A /* Share.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Share.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +69,10 @@
 		637C573626522993009E175A /* ShareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		637C573A26522993009E175A /* ShareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareUITests.swift; sourceTree = "<group>"; };
 		637C573C26522993009E175A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		637C574C26522C86009E175A /* ShareUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShareUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		637C574E26522C86009E175A /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		637C575126522C87009E175A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		637C575326522C87009E175A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +97,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		637C574926522C86009E175A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +113,7 @@
 				637C571C26522991009E175A /* Share */,
 				637C572E26522993009E175A /* ShareTests */,
 				637C573926522993009E175A /* ShareUITests */,
+				637C574D26522C86009E175A /* ShareUI */,
 				637C571B26522991009E175A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +124,7 @@
 				637C571A26522991009E175A /* Share.app */,
 				637C572B26522993009E175A /* ShareTests.xctest */,
 				637C573626522993009E175A /* ShareUITests.xctest */,
+				637C574C26522C86009E175A /* ShareUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,6 +167,16 @@
 			path = ShareUITests;
 			sourceTree = "<group>";
 		};
+		637C574D26522C86009E175A /* ShareUI */ = {
+			isa = PBXGroup;
+			children = (
+				637C574E26522C86009E175A /* ShareViewController.swift */,
+				637C575026522C87009E175A /* MainInterface.storyboard */,
+				637C575326522C87009E175A /* Info.plist */,
+			);
+			path = ShareUI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,10 +187,12 @@
 				637C571626522991009E175A /* Sources */,
 				637C571726522991009E175A /* Frameworks */,
 				637C571826522991009E175A /* Resources */,
+				637C575A26522C87009E175A /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				637C575526522C87009E175A /* PBXTargetDependency */,
 			);
 			name = Share;
 			productName = Share;
@@ -186,6 +235,23 @@
 			productReference = 637C573626522993009E175A /* ShareUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		637C574B26522C86009E175A /* ShareUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 637C575726522C87009E175A /* Build configuration list for PBXNativeTarget "ShareUI" */;
+			buildPhases = (
+				637C574826522C86009E175A /* Sources */,
+				637C574926522C86009E175A /* Frameworks */,
+				637C574A26522C86009E175A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShareUI;
+			productName = ShareUI;
+			productReference = 637C574C26522C86009E175A /* ShareUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -206,6 +272,9 @@
 						CreatedOnToolsVersion = 12.5;
 						TestTargetID = 637C571926522991009E175A;
 					};
+					637C574B26522C86009E175A = {
+						CreatedOnToolsVersion = 12.5;
+					};
 				};
 			};
 			buildConfigurationList = 637C571526522991009E175A /* Build configuration list for PBXProject "Share" */;
@@ -224,6 +293,7 @@
 				637C571926522991009E175A /* Share */,
 				637C572A26522992009E175A /* ShareTests */,
 				637C573526522993009E175A /* ShareUITests */,
+				637C574B26522C86009E175A /* ShareUI */,
 			);
 		};
 /* End PBXProject section */
@@ -249,6 +319,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		637C574A26522C86009E175A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				637C575226522C87009E175A /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +358,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		637C574826522C86009E175A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				637C574F26522C86009E175A /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -293,7 +379,23 @@
 			target = 637C571926522991009E175A /* Share */;
 			targetProxy = 637C573726522993009E175A /* PBXContainerItemProxy */;
 		};
+		637C575526522C87009E175A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 637C574B26522C86009E175A /* ShareUI */;
+			targetProxy = 637C575426522C87009E175A /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		637C575026522C87009E175A /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				637C575126522C87009E175A /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		637C573D26522993009E175A /* Debug */ = {
@@ -415,10 +517,12 @@
 		637C574026522993009E175A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Share/Preview Content\"";
+				DEVELOPMENT_TEAM = 68EUJTHA53;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Share/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -436,10 +540,12 @@
 		637C574126522993009E175A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Share/Preview Content\"";
+				DEVELOPMENT_TEAM = 68EUJTHA53;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Share/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -460,6 +566,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 68EUJTHA53;
 				INFOPLIST_FILE = ShareTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -481,6 +588,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 68EUJTHA53;
 				INFOPLIST_FILE = ShareTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -501,6 +609,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 68EUJTHA53;
 				INFOPLIST_FILE = ShareUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -520,6 +629,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 68EUJTHA53;
 				INFOPLIST_FILE = ShareUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -531,6 +641,44 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Share;
+			};
+			name = Release;
+		};
+		637C575826522C87009E175A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 68EUJTHA53;
+				INFOPLIST_FILE = ShareUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.seventhprotocol.Share.ShareUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		637C575926522C87009E175A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 68EUJTHA53;
+				INFOPLIST_FILE = ShareUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.seventhprotocol.Share.ShareUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -569,6 +717,15 @@
 			buildConfigurations = (
 				637C574626522993009E175A /* Debug */,
 				637C574726522993009E175A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		637C575726522C87009E175A /* Build configuration list for PBXNativeTarget "ShareUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				637C575826522C87009E175A /* Debug */,
+				637C575926522C87009E175A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
