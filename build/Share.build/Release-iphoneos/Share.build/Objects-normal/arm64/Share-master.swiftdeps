@@ -1,0 +1,6 @@
+version: "Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)"
+options: "eb9c4c004b52b61217fbcaea30e30c38"
+build_time: [1621227969, 886789000]
+inputs:
+  "/Users/david/Work/Share/Share/ContentView.swift": [9223372036, 854775807]
+  "/Users/david/Work/Share/Share/ShareApp.swift": [9223372036, 854775807]

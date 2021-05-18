@@ -1,0 +1,5 @@
+version: "Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)"
+options: "af243536e44ddbe5449bd98c8104653a"
+build_time: [1621227914, 154799000]
+inputs:
+  "/Users/david/Work/Share/ShareUI/ShareViewController.swift": [9223372036, 854775807]

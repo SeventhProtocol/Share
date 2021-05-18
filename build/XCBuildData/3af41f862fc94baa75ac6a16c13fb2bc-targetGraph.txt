@@ -1,0 +1,8 @@
+Target dependency graph (4 targets)
+ShareUI in Share
+Share in Share, depends on:
+ShareUI in Share (explicit)
+ShareTests in Share, depends on:
+Share in Share (explicit)
+ShareUITests in Share, depends on:
+Share in Share (explicit)

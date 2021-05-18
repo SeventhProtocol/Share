@@ -1,0 +1,48 @@
+{
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "493946e681461dd468841f21b6d09810158fb2f25670714892a54fab289f9140"
+    },
+    {
+      "guid" : "493946e681461dd468841f21b6d09810311788cf74f8b192312f1225cb7d6d75"
+    },
+    {
+      "guid" : "493946e681461dd468841f21b6d09810de91675e8de35f2d18eab8db0f715b92"
+    },
+    {
+      "guid" : "493946e681461dd468841f21b6d09810bb70e59df237ee016deed141635399de"
+    },
+    {
+      "guid" : "493946e681461dd468841f21b6d09810158fb2f25670714892a54fab289f9140"
+    }
+  ],
+  "continueBuildingAfterErrors" : false,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "overrides" : {
+      "commandLine" : {
+        "table" : {
+
+        }
+      },
+      "synthesized" : {
+        "table" : {
+          "ACTION" : "build",
+          "COLOR_DIAGNOSTICS" : "YES",
+          "diagnostic_message_length" : "270",
+          "ENABLE_PREVIEWS" : "NO"
+        }
+      }
+    }
+  },
+  "schemeCommand" : "launch",
+  "shouldCollectMetrics" : false,
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : false,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : false
+}
